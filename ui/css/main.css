@@ -12,6 +12,8 @@ body,html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  border-bottom: 1px solid #e7272d;
+  background-color: #fff;
 }
 
 
@@ -21,7 +23,6 @@ body,html {
   padding-left: 20px;
   text-align: center;
   margin-top: 0px;
-  background-color: #FFFFFF;
 }
 
 .navbar li a {
@@ -133,4 +134,28 @@ button:hover {
     padding: 16px;
     width:50%;
     margin-left: 25%;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #e7272d ;
+   color: white;
+   text-align: center;
+}
+.container{
+  width: 100%;
+  height: 485px;
+  margin-top: -20px;
+  background-image: url("../images/burger.jpg");
+  text-align: center;
+}
+.container h2{
+  padding-top: 20px;
+  color: #fff;
+}
+.container p{
+  padding-top: 360px;
+  color: #fff;
 }
