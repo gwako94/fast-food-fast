@@ -70,3 +70,11 @@
     left: 0!important;
   }
 }
+#order {
+    padding: 10px;
+}
+
+.description {
+    padding: 0 auto;
+    font-size: 13px;
+}
