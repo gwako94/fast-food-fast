@@ -7,82 +7,10 @@ body,html {
   height: 100%;
 }
 
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border-bottom: 1px solid #e7272d;
-  background-color: #fff;
-}
-
-
-.navbar li {
-  float: right;
-  height: 100%;
-  padding-left: 4px;
-  text-align: center;
-  margin-top: 0px;
-}
-
-.navbar li a {
-  display: block;
-  color: #000;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  margin-right: 10px;
-  margin-left: 5px;
-}
-.navbar li a:hover{
-  text-decoration: underline;
-  transition: 2000;
-}
-
-.red{
-  color:#e7272d !important;
-}
-#menu a{
-  color:#e7272d !important;
-}
-#menu{
-  margin-top: 7px;
-}
-#regular{
-  margin-top: 7px;
-}
-/*admin*/
-#admin{
-  margin-top: 7px;
-}
-
-
-#login {
-  margin-top: 7px;
-}
-#login {
-  margin-top: 7px;
-  padding-right: -21px;
-  /* width: 84px; */
-  padding: 0px;
-  border-radius: 5px;
-}
-#home{
-  margin-top: 7px;
-  padding-right: 10px !important;
-}
-#signup{
-  margin-top: 7px;
-}
-#signup a{
-  color: black;
-}
 /* Sign Up page styles */
 
-.signup {
-  padding: 16px;
+.register {
+  padding: 0px;
   width:50%;
   margin-left: 25%;
 }
@@ -110,7 +38,7 @@ hr {
 }
 
 /* Set a style for the submit/register button */
-#signup-button {
+#register-button {
   color: white;
   padding: 16px 20px;
   width: 100%;
@@ -118,7 +46,6 @@ hr {
   margin-left: 0px;
   border: none;
   cursor: pointer;
-  opacity: 0.9;
 }
 
 .signup-btn:hover {
@@ -155,7 +82,7 @@ button:hover {
 }
 
 .login {
-    padding: 16px;
+    padding: 0px;
     width:50%;
     margin-left: 25%;
 }
@@ -168,8 +95,7 @@ button:hover {
    color: white;
    text-align: center;
 }
-.container{
-  left: 0;
+/**.container{
   width: 100%;
   height: 85%;
   margin-top: 0px;
@@ -177,7 +103,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-}
+}**/
 .content{
   width: 60%;
   background-color: #f8f8f8;
@@ -238,4 +164,62 @@ button:hover {
   margin-bottom: 5px;
   border-radius: 5px;
   background-color: #329495;
+}
+table {
+    font-family: arial, sans-serif;
+    width: 80%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    margin: auto;
+    margin-top: 5%;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 6px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #787878;
+}
+button.list{
+  width:20%;
+  border-radius: 5px;
+  margin-left: 7%;
+}
+button.list a{
+  text-decoration: none;
+  color: white;
+}
+.mycontent{
+  width: 60%;
+  background-color: #f8f8f8;
+  margin-left: 10%;
+  height:85%;
+}
+.add{
+    position: absolute;
+    width: 20%;
+    top: 8%;
+    right: 6%;
+  
+}
+.add button{
+  border-radius: 10px;
+  height: 70px;
+}
+.add a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
 }

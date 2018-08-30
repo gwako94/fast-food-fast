@@ -6,26 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- main css -->
-    <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Fast Food Fast</title>
   </head>
-  <body>
-    <div class="navbar">
-        <ul>
-          <li style="float:left;"><a href="index.html" style="font-size: 25px;"><span class='red'>Fast </span>Food Fast</a></li>
-          <li id="signup"><a href="signup.html">Sign Up</a></li>
-          <li id="login"><a href="signin.html">Sign In</a></li>
-          <li id="menu"><a href="menu.html">Our Menu</a></li>
-          <li id="home"><a href="index.html">Home</a></li>
-        </ul>
-    </div>
-    <div class="container">
-    	
-    </div>
+    <body>
+        <div class="navbar" id="myNavbar">
+            <ul>
+                  <li style="float:left;"><a href="index.html" style="font-size: 30px;" class="logo">
+                      <span class='red'>Fast </span>Food Fast
+                      </a>
+                  </li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="Bar()">
+                            <i class="fa fa-bars"></i>
+                      </a>
+                  </li>
+                  <li id="signup"><a href="signup.html">Register</a></li>
+                  <li id="login"><a href="signin.html">Login</a></li>
+                  <li id="menu"><a href="menu.html">Our Menu</a></li>
+                  <li id="home"><a href="index.html" class"active">Home</a></li>
+            </ul>
+        </div>
+        
+        <div class="container"></div>
+        <script src="js/main.js"></script>
     <footer class=footer>
-    	<h2 style="font-size: 25px;">It's a whole new experince!</h2>
-    	<p>Fast Food Fast &copy; 2018</p>
-    </footer> 
-	</body>
+      <h2 style="font-size: 25px;">It's a whole new experience!</h2>
+      <p>Fast Food Fast &copy; 2018</p>
+    </footer>
+    </body>
 </html>
