@@ -8,28 +8,17 @@
     <!-- main css -->
      <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>Fast Food Fast</title>
   </head>
     <body>
-        <div class="navbar" id="myNavbar">
-            <ul>
-                  <li style="float:left;"><a href="index.html" style="font-size: 30px;" class="logo">
-                      <span class='red'>Fast </span>Food Fast
-                      </a>
-                  </li>
-                  <li><a href="javascript:void(0);" class="icon" onclick="Bar()">
-                            <i class="fa fa-bars"></i>
-                      </a>
-                  </li>
-                  <li id="signup"><a href="signup.html">Register</a></li>
-                  <li id="login"><a href="signin.html">Login</a></li>
-                  <li id="menu"><a href="menu.html">Our Menu</a></li>
-                  <li id="home"><a href="index.html" class"active">Home</a></li>
-            </ul>
-        </div>
-        
+            <div class="navbar" id="myNavbar">
+                  <a href="index.html" class="nav-logo"><span class="red">Fast </span>Food Fast</a>
+                  <a href="signup.html" class="nav-item">Register</a>
+                  <a href="signin.html" class="nav-item">Login</a>
+                  <a href="menu.html" class="nav-item" id="our-menu">Our menu</a>
+                  <a href="index.html" class="nav-item">Home</a>
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         <div class="container"></div>
         <script src="js/main.js"></script>
     <footer class=footer>
