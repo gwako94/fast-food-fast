@@ -131,14 +131,6 @@ button:hover {
   height: 70%;
   width: 100%;
 }
-/*.description {*/
-/*    height: 15%;*/
-/*    margin-bottom: 15%;*/
-/*    position:absolute;*/
-/*    text-align: center;*/
-/*    background-color:#E8E8E8;*/
-/*    width:100%;*/
-/*}*/
 .item span{
     position: absolute;
     z-index: 4;
