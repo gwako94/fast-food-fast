@@ -44,8 +44,12 @@
 
 #order {
     padding: 12px;
+    height: 15%;
+    position: absolute;
+    margin-bottom: 0;
+    width: 50%;
+    margin-left: -25%;
 }
-
 .description{
     padding: 0;
     font-size: 13px;

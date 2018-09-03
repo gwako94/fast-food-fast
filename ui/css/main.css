@@ -23,7 +23,6 @@ body{
     text-align: center;
     background-size:cover;
     background-position:center;
-    background-color: blue;
 }
 
 /* Sign Up page styles */
@@ -111,9 +110,9 @@ button:hover {
     background-color: #f8f8f8;
     margin-left: 20%;
     margin-top: 2%;
-    height: 84.5%;
-    margin-bottom: 10%;
+    height: 100%;
     position: absolute;
+    margin-bottom: 10%;
 }
 .item{
     background-color: #fff;
@@ -131,10 +130,6 @@ button:hover {
 .item img{
   height: 70%;
   width: 100%;
-}
-.item img>h3{
-  color:#fff;
-  padding-bottom: 20px;
 }
 .item span{
     position: absolute;
@@ -194,8 +189,14 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #787878;
+    background-color: #E8E8E8;
 }
+
+table tbody tr:first-child{
+  background-color: #329495;
+  color:#fff;
+}
+
 button.list{
   width:20%;
   border-radius: 5px;
