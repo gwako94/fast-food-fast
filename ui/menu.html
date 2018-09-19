@@ -8,28 +8,18 @@
     <!-- main css -->
      <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>Fast Food Fast</title>
   </head>
     <body>
-        <div class="navbar" id="myNavbar">
-            <ul>
-                  <li style="float:left;"><a href="index.html" style="font-size: 30px;" class="logo">
-                      <span class='red'>Fast </span>Food Fast
-                      </a>
-                  </li>
-                  <li><a href="javascript:void(0);" class="icon" onclick="Bar()">
-                            <i class="fa fa-bars"></i>
-                      </a>
-                  </li>
-          <li id="regular"><a href="#">Sign out</a></li>
-          <li id="regular"><a href="order_history.html">Your Order History</a></li>
-        </ul>
-    </div>
+            <div class="navbar" id="myNavbar">
+                  <a href="index.html" class="nav-logo"><span class="red">Fast </span>Food Fast</a>
+                  <a href="signup.html" class="nav-item">Sign Out</a>
+                  <a href="order_history.html" class="nav-item">Order History</a>
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
     <div class="content">
       <div class="item">
-        <img src="images/1.jpg"></img>
+        <img src="images/1.jpg">
           <div class="description">
             <h3>Delicious Burger</h3>
         </div>
@@ -37,7 +27,7 @@
         <span>Ksh. 200</span>
       </div>
       <div class="item">
-        <img src="images/milkshake.jpg"></img>
+        <img src="images/milkshake.jpg">
         <div class="description">
         <h3>Refreshing Milkshake</h3>
         </div>
@@ -45,7 +35,7 @@
         <span>Ksh. 150</span>
       </div>
       <div class="item">
-        <img src="images/chicken.jpg"></img>
+        <img src="images/chicken.jpg">
          <div class="description">
           <h3>Tasty Chicken</h3>
         </div>
@@ -53,7 +43,7 @@
         <span>Ksh. 300</span>
       </div>
       <div class="item">
-        <img src="images/1.jpg"></img>
+        <img src="images/1.jpg">
           <div class="description">
             <h3>Delicious Burger</h3>
         </div>
@@ -61,7 +51,7 @@
         <span>Ksh. 200</span>
       </div>
       <div class="item">
-        <img src="images/milkshake.jpg"></img>
+        <img src="images/milkshake.jpg">
         <div class="description">
         <h3>Refreshing Milkshake</h3>
         </div>
@@ -69,12 +59,16 @@
         <span>Ksh. 150</span>
       </div>
       <div class="item">
-        <img src="images/chicken.jpg"></img>
+        <img src="images/chicken.jpg">
          <div class="description">
           <h3>Tasty Chicken</h3>
         </div>
         <button type=submit id="order">Order</button>
         <span>Ksh. 300</span>
       </div>
+    <script src="js/main.js"></script>
+    <footer class=footer>
+      <p>Fast Food Fast &copy; 2018</p>
+    </footer> 
   </body>
 </html>

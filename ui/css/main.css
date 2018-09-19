@@ -13,12 +13,13 @@ body,html {
   padding: 0px;
   width:50%;
   margin-left: 25%;
+  height: 100%;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
@@ -105,21 +106,23 @@ button:hover {
   text-align: center;
 }**/
 .content{
-  width: 60%;
-  background-color: #f8f8f8;
-  margin-left: 20%;
-  height:85%;
+    width: 60%;
+    background-color: #f8f8f8;
+    margin-left: 20%;
+    height:84.5%;
 }
 .item{
-  background-color: #fff;
-  width: 25%;
-  height:40%;
-  float: left;
-  margin-top: 44px;
-  margin-left: 5.5%;
-  border-radius: 8px;
-  text-align: center;
-  position: relative;
+    background-color: #fff;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    width: 25%;
+    height: 32%;
+    float: left;
+    margin-top: 44px;
+    margin-left: 5.5%;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
 }
 .item img{
   height: 70%;

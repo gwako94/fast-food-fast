@@ -8,24 +8,14 @@
     <!-- main css -->
      <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>Fast Food Fast</title>
   </head>
     <body>
-        <div class="navbar" id="myNavbar">
-            <ul>
-                  <li style="float:left;"><a href="index.html" style="font-size: 30px;" class="logo">
-                      <span class='red'>Fast </span>Food Fast
-                      </a>
-                  </li>
-                  <li><a href="javascript:void(0);" class="icon" onclick="Bar()">
-                            <i class="fa fa-bars"></i>
-                      </a>
-                  </li>
-          <li id="register"><a href="signup.html">Register</a></li>
-        </ul>
-    </div>
+            <div class="navbar" id="myNavbar">
+                  <a href="index.html" class="nav-logo"><span class="red">Fast </span>Food Fast</a>
+                  <a href="signup.html" class="nav-item">Register</a>
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
     <form>
         <div class="login">
             
@@ -47,8 +37,8 @@
         </div>
 
     </form>
+    <script src="js/main.js"></script>
     <footer class=footer>
-        <h2 style="font-size: 25px;">It's a whole new experience!</h2>
         <p>Fast Food Fast &copy; 2018</p>
     </footer> 
 
