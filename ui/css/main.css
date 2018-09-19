@@ -2,9 +2,10 @@
 body {
   margin: 0;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
 }
 body,html {
-  height: 100%;
+  min-height: 100%;
 }
 
 /* Sign Up page styles */
@@ -92,7 +93,7 @@ button:hover {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #e7272d ;
+   background-color: #1f2a36;
    color: white;
    text-align: center;
 }
