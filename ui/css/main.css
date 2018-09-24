@@ -108,7 +108,7 @@ button:hover {
 .content{
     width: 70%;
     background-color: #f8f8f8;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 2%;
     height: 100%;
     position: absolute;
@@ -210,9 +210,9 @@ button.list a{
 .add{
     position: absolute;
     width: 20%;
-    top: 8%;
-    right: 6%;
-  
+    bottom: 0%;
+    left: 30%;
+    width: 40%;
 }
 .add button{
   border-radius: 10px;
@@ -240,4 +240,13 @@ button.list a{
    background-color: #e7272d ;
    color: white;
    text-align: center;
+}
+.mycontent{
+    width: 80%;
+    background-color: #f8f8f8;
+    margin-left: 10%;
+    margin-top: 2%;
+    height: 100%;
+    position: absolute;
+    margin-bottom: 10%;
 }
