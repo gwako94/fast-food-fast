@@ -1,5 +1,7 @@
 const url = 'https://herokufastfoodapi.herokuapp.com/api/v2/auth/register'
 const register = document.getElementById('reg')
+const success = document.getElementById('success')
+const error = document.getElementById('error')
 
 register.addEventListener('submit', e => {
     e.preventDefault();
@@ -9,7 +11,8 @@ register.addEventListener('submit', e => {
     let c_pass = document.getElementById('confirm-password').value;
 
     if (pass != c_pass){
-        alert("Password does not match");
+        error.innerHTML = 'Password does not match!'
+        return
     }
 
     let data = {
@@ -36,13 +39,15 @@ const register_user = (user_details) => {
     })
     .then((data) => {
         if (status_code === 201){
-            alert(data.message);
-            window.location.href = 'signin.html';
+            success.innerHTML = data.message;
+            window.setTimeout(() => window.location.href = 'signin.html', 3000);
         }
         if (status_code === 409){
-            alert(data.message);
+            error.innerHTML = data.message;
         }
-
+        if (status_code === 400){
+            error.innerHTML = data.message;
+        }
     })
     .catch((err) => {
             console.log(err)
