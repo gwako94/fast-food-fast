@@ -16,17 +16,17 @@
                   <a href="signup.html" class="nav-item">Register</a>
                   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-    <form>
+    <form id="login">
         <div class="login">
             
             <h1>Login</h1>
            
             <hr>
                 <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required>
+                <input type="text" placeholder="Enter Username" id="username" required>
         
                 <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="signin_psw" required>
+                <input type="password" placeholder="Enter Password" id="signin_psw" required>
                 
                 <button type="submit" id="signin-button">Login</button>
         
@@ -38,5 +38,6 @@
 
     </form>
     <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
