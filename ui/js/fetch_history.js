@@ -19,13 +19,16 @@ window.onload = function getHistory (){
         if (status_code === 200){
             order_history = ""
             data['Orders'].forEach(order => {
-                console.log(order.cart)
+                for (var key in order.cart){
+                    item = key;
+                    quantity = order.cart[key]
+                };
                 order_history+=`
             <tr>
                 <td>${order.id}</td>
                 <td>
                     <ul>
-                        <li>${order.cart}</li>
+                        <li>${quantity} ${item}</li>
                     </ul>
                 </td>
                 <td>Ksh. ${order.total}</td>
