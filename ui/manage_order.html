@@ -13,12 +13,12 @@
     <body>
             <div class="navbar" id="myNavbar">
                   <a href="index.html" class="nav-logo"><span class="red">Fast </span>Food Fast</a>
-                  <a href="signin.html" class="nav-item">Sign Out</a>
+                  <a href="signin.html" class="nav-item" id="sign-out">Sign Out</a>
                   <a href="add_menu.html" class="nav-item" id="our-menu">Manage Menu</a>
                   <a href="index.html" class="nav-item">Home</a>
                   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-    <table>
+    <table id="orders">
          <tr>
             <th>Order ID</th>
             <th>Order Items</th>
@@ -26,59 +26,10 @@
             <th>Date</th>
             <th>Status</th>
         </tr>
-        <tr>
-            <td>125</td>
-            <td>
-                <ul>
-                    <li>1 Pizza</li>
-                    <li>2 Sodas</li>
-                </ul>
-            </td>
-            <td>Ksh. 1000</td>
-            <td>29/08/2018</td>
-            <td>
-                <button id="accept" class="list"><a href="#">Accept</a></button>
-                <button id="accept" class="list"><a href="#">Decline</a></button>
-                <button id="accept" class="list"><a href="#">Complete</a></button>
-            </td>
-        </tr>
-        <tr>
-            <td>145</td>
-            <td>
-                <ul>
-                    <li>2 chicke piece</li>
-                    <li>fries</li>
-                    <li>1 mango Juice</li>
-                </ul>
-            </td>
-            <td>Ksh. 800</td>
-            <td>09/06/2018</td>
-            <td>
-                <button id="accept" class="list"><a href="#">Accept</a></button>
-                <button id="accept" class="list"><a href="#">Decline</a></button>
-                <button id="accept" class="list"><a href="#">Complete</a></button>
-            </td>
-        </tr>
-        <tr>
-            <td>95</td>
-            <td>
-                <ul>
-                    <li>1 burger</li>
-                    <li>1 milkshake</li>
-                </ul>
-            </td>
-            <td>Ksh. 450</td>
-            <td>10/05/2018</td>
-            <td>
-                <button id="accept" class="list"><a href="#">Accept</a></button>
-                <button id="accept" class="list"><a href="#">Decline</a></button>
-                <button id="accept" class="list"><a href="#">Complete</a></button>
-            </td>
-        </tr>
-        
         
     </table>
     <script src="js/main.js"></script>
+    <script src="js/get_orders.js"></script>
     <footer class=footer>
     	<p>Fast Food Fast &copy; 2018</p>
     </footer> 
