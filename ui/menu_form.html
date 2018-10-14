@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- main css -->
+     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Fast Food Fast</title>
+  </head>
+    <body>
+            <div class="navbar" id="myNavbar">
+                  <a href="index.html" class="nav-logo"><span class="red">Fast </span>Food Fast</a>
+                  <a href="signin.html" class="nav-item">Login</a>
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+     <form id="add_menu">
+              <div class="register">
+                    <h1>Menu</h1>
+                    <p id="success"></p>
+                    <p id="error"></p>
+                    <hr>
+                        <label for="name"><b>Item Name</b></label>
+                        <input type="text" placeholder="Enter Item name" id="item_name" required>
+                    
+                        <label for="email"><b>Image URL</b></label>
+                        <input type="text" placeholder="Enter Image URL" id="image_url" required>
+                    
+                        <label for="passwordw"><b>Price</b></label>
+                        <input type="text" placeholder="Enter Price" id="price" required>
+                    
+                        <button type="submit" id="register-button">Add</button>
+                    <hr>
+
+                </div>
+
+        </form>
+    <script src="js/main.js"></script>
+    <script src="js/add_menu.js"></script> 
+    <script src="js/menu.js"></script>
+  </body>
+</html>
