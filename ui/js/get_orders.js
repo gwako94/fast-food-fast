@@ -1,5 +1,5 @@
 const history_url = 'https://herokufastfoodapi.herokuapp.com/api/v2/orders'
-const orders = document.getElementById('order_history')
+const orders = document.getElementById('orders')
 
 window.onload = function getOrders (){
     fetch(history_url, {
