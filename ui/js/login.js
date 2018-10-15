@@ -28,8 +28,14 @@ const login_user = (login_details) => {
     .then((data) => {
         if (status_code === 200){
             token = data.token;
+            user = JSON.parse(atob(token.split('.')[1]));
             localStorage.setItem('token', token);
-            window.location.href = 'menu.html';
+            if (user['admin']){
+                window.location.href = 'manage_order.html';
+            }
+            else{
+                window.location.href = 'menu.html';
+            }
         }
     })
     .catch((err) => {

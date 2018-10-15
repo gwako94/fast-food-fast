@@ -34,7 +34,6 @@ window.onload = function getMenu(){
             let button = document.createElement('button')
             button.setAttribute('type', "submit")
             button.setAttribute('id', menu.item_name)
-            console.log(menu.item_name)
             button.addEventListener('click', function clicked(){
                 localStorage.removeItem('clicked')
                 localStorage.setItem('clicked', this.id)

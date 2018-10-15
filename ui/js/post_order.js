@@ -6,8 +6,7 @@ const post_order_url =  'https://herokufastfoodapi.herokuapp.com/api/v2/users/or
 function place_order() {
     item = localStorage.getItem('clicked')
     order = {}
-    order[item] =1
-    console.log(order)
+    order[item] = 1
     cart = JSON.stringify({"cart": order})
     fetch(post_order_url, {
         method: 'POST',
