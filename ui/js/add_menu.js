@@ -69,7 +69,7 @@ menu.addEventListener('submit', e => {
 
     let menu_data = {
         item_name: item_name,
-        image_url: image_url,
+        image_url: image,
         price: price
     };
     add_menu(menu_data);
