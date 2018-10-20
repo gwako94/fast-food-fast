@@ -93,7 +93,6 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
 }
 
 button:hover {
@@ -174,7 +173,7 @@ table {
     border-color: grey;
     margin: auto;
     padding: 20px;
-    /*margin-bottom: 15px;*/
+    margin-bottom: 10%;
     background-color: rgb(245, 245, 245);
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 6px;
@@ -198,9 +197,9 @@ table tbody tr:first-child{
 }
 
 button.list{
-  width:20%;
   border-radius: 5px;
   margin-left: 7%;
+  text-align: center;
 }
 button.list a{
   text-decoration: none;
@@ -249,4 +248,7 @@ button.list a{
     height: 100%;
     position: absolute;
     margin-bottom: 10%;
+}
+#orders{
+  width:70%;
 }
