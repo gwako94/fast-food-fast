@@ -1,3 +1,4 @@
+const username = document.getElementById('user')
 function myFunction() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
@@ -6,6 +7,8 @@ function myFunction() {
         x.className = "navbar";
     }
 }
+name = localStorage.getItem('user')
+username.innerHTML = "Hello, " +name
 
 function signout() {
     localStorage.clear();
