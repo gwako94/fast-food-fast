@@ -34,11 +34,15 @@ window.onload = function getOrders (){
             let th_status = document.createElement('th')
             let status_text = document.createTextNode("Status")
             th_status.appendChild(status_text)
+            let th_action  = document.createElement('th')
+            let action = document.createTextNode("Action")
+            th_action.appendChild(action)
             tr_head.appendChild(th_id)
             tr_head.appendChild(th_items)
             tr_head.appendChild(th_cost)
             tr_head.appendChild(th_date)
             tr_head.appendChild(th_status)
+            tr_head.appendChild(th_action)
             tbody.appendChild(tr_head)
             data['Orders'].forEach(order => {
                 for (var key in order.cart){
@@ -67,20 +71,38 @@ window.onload = function getOrders (){
             td_status.appendChild(status_text)
             let td_buttons = document.createElement("td")
             let process = document.createElement("button")
-            process.setAttribute("id", "process")
+            process.setAttribute("id", "accept")
             process.setAttribute("class", "list")
-            let process_text = document.createTextNode("Process")
+            process.setAttribute("value", order.id)
+            let process_text = document.createTextNode("Accept")
             process.appendChild(process_text)
+            process.addEventListener('click', function update(){
+                localStorage.setItem('order_id', this.value)
+                localStorage.setItem('action', this.id)
+            })
+            process.addEventListener('click', update_status)
             let cancel = document.createElement("button")
-            cancel.setAttribute("id", "cancel")
+            cancel.setAttribute("id", "decline")
             cancel.setAttribute("class", "list")
-            let cancel_text = document.createTextNode("Cancel")
+            cancel.setAttribute("value", order.id)
+            let cancel_text = document.createTextNode("Decline")
             cancel.appendChild(cancel_text)
+            cancel.addEventListener('click', function update(){
+                localStorage.setItem('order_id', this.value)
+                localStorage.setItem('action', this.id)
+            })
+            cancel.addEventListener('click', update_status)
             let complete = document.createElement("button")
             complete.setAttribute("id", "complete")
             complete.setAttribute("class", "list")
+            complete.setAttribute("value", order.id)
             let complete_text = document.createTextNode("Complete")
             complete.appendChild(complete_text)
+            complete.addEventListener('click', function update(){
+                localStorage.setItem('order_id', this.value)
+                localStorage.setItem('action', this.id)
+            })
+            complete.addEventListener('click', update_status)
             td_buttons.appendChild(process)
             td_buttons.appendChild(cancel)
             td_buttons.appendChild(complete)
@@ -92,12 +114,6 @@ window.onload = function getOrders (){
             tr_body.appendChild(td_buttons)
             tbody.appendChild(tr_body)
             orders.appendChild(tbody)
-            //     <td>
-            //         <button id="accept" class="list"><a href="#">Accept</a></button>
-            //         <button id="accept" class="list"><a href="#">Decline</a></button>
-            //         <button id="accept" class="list"><a href="#">Complete</a></button>
-            //     </td>
-            // </tr>`
             });
         }
        

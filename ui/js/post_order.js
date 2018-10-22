@@ -23,7 +23,8 @@ function place_order() {
     })
     .then((data) => {
         if (status_code === 201){
-            console.log(data.message)
+            alert(data.message)
+            location.reload()
         } 
     })
     .catch((err) => {
