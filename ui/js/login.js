@@ -29,6 +29,7 @@ const login_user = (login_details) => {
         if (status_code === 200){
             token = data.token;
             user = JSON.parse(atob(token.split('.')[1]));
+            localStorage.setItem('user', user['username'])
             localStorage.setItem('token', token);
             if (user['admin']){
                 window.location.href = 'manage_order.html';

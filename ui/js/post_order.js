@@ -25,6 +25,10 @@ function place_order() {
         if (status_code === 201){
             alert(data.message)
             location.reload()
+        }
+        if (status_code === 401){
+            alert("Please login to order");
+            window.location = "signin.html";
         } 
     })
     .catch((err) => {

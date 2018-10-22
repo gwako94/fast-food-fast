@@ -6,3 +6,8 @@ function myFunction() {
         x.className = "navbar";
     }
 }
+
+function signout() {
+    localStorage.clear();
+    window.location = "index.html";
+}
