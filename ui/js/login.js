@@ -27,16 +27,28 @@ const login_user = (login_details) => {
     })
     .then((data) => {
         if (status_code === 200){
+            success.innerHTML = data.message;
+            success.style.backgroundColor = "#228B22";
+            success.style.color = "#fff"
+            success.style.padding = "5px";
             token = data.token;
             user = JSON.parse(atob(token.split('.')[1]));
-            localStorage.setItem('user', user['username'])
+            localStorage.setItem('loggedIn', user['username'])
             localStorage.setItem('token', token);
             if (user['admin']){
                 window.location.href = 'manage_order.html';
+                
             }
             else{
                 window.location.href = 'menu.html';
             }
+        }
+        if (status_code === 401){
+            error.innerHTML = data.message
+            error.style.backgroundColor = "#800000";
+            error.style.color = "#fff"
+            error.style.padding = "5px";
+            
         }
     })
     .catch((err) => {

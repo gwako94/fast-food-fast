@@ -40,13 +40,19 @@ const register_user = (user_details) => {
     .then((data) => {
         if (status_code === 201){
             success.innerHTML = data.message;
+            success.style.backgroundColor = "#228B22";
+            success.style.padding = "5px";
             window.setTimeout(() => window.location.href = 'signin.html', 3000);
         }
         if (status_code === 409){
             error.innerHTML = data.message;
+            error.style.backgroundColor = "#800000";
+            error.style.padding = "5px";
         }
         if (status_code === 400){
             error.innerHTML = data.message;
+            error.style.backgroundColor = "#800000";
+            error.style.padding = "5px";
         }
     })
     .catch((err) => {

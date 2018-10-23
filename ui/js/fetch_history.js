@@ -75,6 +75,9 @@ window.onload = function getHistory (){
             
             });
         }
+        if (status_code === 404){
+            alert(data.message)
+        }
 
     });
 };
