@@ -42,10 +42,15 @@ window.onload = function getMenu(){
             let del_button = document.createElement('button')
             del_button.setAttribute('type', "submit")
             del_button.setAttribute('id', "delete")
+            del_button.setAttribute("value", menu.id)
             let del_text = document.createTextNode('Delete')
             del_button.appendChild(del_text)
             div.appendChild(edit_button)
             div.appendChild(del_button)
+            del_button.addEventListener("click", function del(){
+                localStorage.setItem('menu_id', this.value);
+            })
+            del_button.addEventListener("click", delete_menu)
             let span = document.createElement('span')
             let span_text = document.createTextNode('Ksh. '+ menu.price)
             span.appendChild(span_text)
